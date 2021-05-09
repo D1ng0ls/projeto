@@ -1,0 +1,123 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cabecalho {
+    background-color: aquamarine;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    align-items: center;
+}
+
+.menu {
+    display: inline-block;
+    background-color: darkgrey;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu h3:hover {
+    text-decoration: underline;
+    color: gainsboro;
+}
+
+.menu:hover {
+    background-color: gray;
+}
+
+.menu a h3 {
+    display: inline-block;
+    margin: 4px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.converter {
+    width: 20%;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.massa {
+    border-bottom: 5px black solid;
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/balanca_fundo.png");
+    background-position: left;
+}
+
+.volume {
+    border-bottom: 5px black solid;
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/volume_fundo.png");
+    background-position: right;
+}
+
+.comprimento {
+    border-bottom: 5px black solid;
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/regua_fundo.png");
+    background-position: left;
+}
+
+.temperatura {
+    border-bottom: 5px black solid;
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/temperatura_fundo.png");
+    background-position: right;
+}
+
+.velocidade {
+    border-bottom: 5px black solid;
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/velocidade_fundo.png");
+    background-position: left;
+}
+
+.pressao {
+    margin-bottom: 25px;
+    background: no-repeat;
+    background-image: url("../img/pressao_fundo.png");
+    background-position: right;
+}
+
+.entrada {
+    color: red;
+}
+
+.saida {
+    color: darkblue;
+}
+
+@media screen and (max-width: 480px) {
+    .converter {
+        width: 50%;
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/java.js"></script>
+    <title>Conversor de medidas</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Conversor de medidas</h1>
+        </div>
+    </header>
+
+    <div class="menu">
+        <a href="index.html#massa">
+            <h3>Massa</h3>
+        </a>
+        <a href="index.html#volume">
+            <h3>Volume</h3>
+        </a>
+        <a href="index.html#comprimento">
+            <h3>Comprimento</h3>
+        </a>
+        <a href="index.html#temperatura">
+            <h3>Temperatura</h3>
+        </a>
+        <a href="index.html#velocidade">
+            <h3>Velocidade</h3>
+        </a>
+        <a href="index.html#pressao">
+            <h3>Pressão</h3>
+        </a>
+    </div>
+
+    <!-- conversor de massas -->
+    <div class="massa" id="massa">
+
+        <!-- libras -->
+        <div class="converter libra">
+            <h2>Conversor de Kg para Lb:</h2>
+            <form name="conversorkl">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradakl" name="entrada" oninput="kl()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidakl"></span></p>
+        </div>
+        <div class="converter libra">
+            <h2>Conversor de Lb para Kg:</h2>
+            <form name="conversorlk">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradalk" name="entrada" oninput="lk()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidalk"></span></p>
+        </div>
+
+        <!-- ounce -->
+        <div class="converter ounce">
+            <h2>Conversor de Kg para Ounce:</h2>
+            <form name="conversorko">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradako" name="entrada" oninput="ko()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidako"></span></p>
+        </div>
+        <div class="converter ounce">
+            <h2>Conversor de Ounce para Kg:</h2>
+            <form name="conversorok">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradaok" name="entrada" oninput="ok()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidaok"></span></p>
+        </div>
+    </div>
+
+    <!-- conversor de volume -->
+    <div class="volume" id="volume">
+
+        <!-- gallon -->
+        <div class="converter gallon">
+            <h2>Conversor de Litros para Galões:</h2>
+            <form name="conversorlg">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradalg" name="entrada" oninput="lg()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidalg"></span></p>
+        </div>
+        <div class="converter gallon">
+            <h2>Conversor de Galões para Litros:</h2>
+            <form name="conversorgl">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradagl" name="entrada" oninput="gl()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidagl"></span></p>
+        </div>
+
+        <!-- ounce liquid -->
+        <div class="converter ounceliquid">
+            <h2>Conversor de Litros para Onça líquida:</h2>
+            <form name="conversorlo">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradalo" name="entrada" oninput="lo()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidalo"></span></p>
+        </div>
+        <div class="converter ounceliquid">
+            <h2>Conversor de Onça líquida para Litros:</h2>
+            <form name="conversorgol">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradaol" name="entrada" oninput="ol()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidaol"></span></p>
+        </div>
+    </div>
+
+    <!-- conversor de comprimento -->
+    <div class="comprimento" id="comprimento">
+
+        <!-- pés -->
+        <div class="converter pes">
+            <h2>Conversor de Metros para Pés:</h2>
+            <form name="conversormp">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradamp" name="entrada" oninput="mp()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidamp"></span></p>
+        </div>
+        <div class="converter pes">
+            <h2>Conversor de Pés para Metros:</h2>
+            <form name="conversorpm">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradapm" name="entrada" oninput="pm()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidapm"></span></p>
+        </div>
+
+        <!-- jardas -->
+        <div class="converter jardas">
+            <h2>Conversor de Metros para Jardas:</h2>
+            <form name="conversormj">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradamj" name="entrada" oninput="mj()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidamj"></span></p>
+        </div>
+        <div class="converter jardas">
+            <h2>Conversor de Jardas para Metros:</h2>
+            <form name="conversorjm">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradajm" name="entrada" oninput="jm()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidajm"></span></p>
+        </div>
+    </div>
+
+    <!-- conversor de temperatura -->
+    <div class="temperatura" id="temperatura">
+
+        <!-- fahrenheit -->
+        <div class="converter fahrenheit">
+            <h2>Conversor de Fahrenheit para Celsius:</h2>
+            <form name="conversorfc">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradafc" name="entrada" oninput="fc()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidafc"></span></p>
+        </div>
+        <div class="converter fahrenheit">
+            <h2>Conversor de Celsius para Fahrenheit:</h2>
+            <form name="conversorcf">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradacf" name="entrada" oninput="cf()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidacf"></span></p>
+        </div>
+
+        <!-- kelvin -->
+        <div class="converter kelvin">
+            <h2>Conversor de Kelvin para Celsius:</h2>
+            <form name="conversorkc">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradakc" name="entrada" oninput="kc()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidakc"></span></p>
+        </div>
+        <div class="converter kelvin">
+            <h2>Conversor de Celsius para Kelvin:</h2>
+            <form name="conversorck">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradack" name="entrada" oninput="ck()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidack"></span></p>
+        </div>
+    </div>
+
+    <!-- conversor de velocidade -->
+    <div class="velocidade" id="velocidade">
+
+        <!-- metros/s -->
+        <div class="converter metrossegundo">
+            <h2>Conversor de M/s para Km/h:</h2>
+            <form name="conversorsh">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradash" name="entrada" oninput="sh()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidash"></span></p>
+        </div>
+        <div class="converter metrossegundo">
+            <h2>Conversor de Km/h para M/s:</h2>
+            <form name="conversorhs">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradahs" name="entrada" oninput="hs()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidahs"></span></p>
+        </div>
+
+        <!-- nó -->
+        <div class="converter no">
+            <h2>Conversor de Nó para Km/h:</h2>
+            <form name="conversornh">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradanh" name="entrada" oninput="nh()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidanh"></span></p>
+        </div>
+        <div class="converter no">
+            <h2>Conversor de Km/h para Nó:</h2>
+            <form name="conversorhn">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradahn" name="entrada" oninput="hn()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidahn"></span></p>
+        </div>
+    </div>
+
+    <!-- conversor de pressão -->
+    <div class="pressao" id="pressao">
+
+        <!-- psi -->
+        <div class="converter psi">
+            <h2>Conversor de Psi para Atm:</h2>
+            <form name="conversorpa">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradapa" name="entrada" oninput="pa()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidapa"></span></p>
+        </div>
+        <div class="converter psi">
+            <h2>Conversor de Atm para Psi:</h2>
+            <form name="conversorap">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradaap" name="entrada" oninput="ap()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidaap"></span></p>
+        </div>
+
+        <!-- bar -->
+        <div class="converter bar">
+            <h2>Conversor de Bar para Atm:</h2>
+            <form name="conversorba">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradaba" name="entrada" oninput="ba()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidaba"></span></p>
+        </div>
+        <div class="converter bar">
+            <h2>Conversor de Atm para Bar:</h2>
+            <form name="conversorab">
+                <label>Valor de entrada: <input type="number" class="entrada" id="entradaab" name="entrada" oninput="ab()"></label>
+            </form>
+            <p>Valor convertido: <span class="saida" id="saidaab"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
